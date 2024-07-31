@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
     background-color: navy;
 `
 
