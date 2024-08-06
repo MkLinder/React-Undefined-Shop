@@ -5,7 +5,9 @@ export const StyledHeader = styled.header`
     top: 0px;
     right: 0px;
     left: 0px;
+    
     background-color: navy;
+    box-shadow: 0px 0px 3px 2px #0000006b;
 `
 
 export const Wrapper = styled.div`
@@ -13,7 +15,7 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    max-width: 1240px;
+    max-width: 1024px;
     height: 60px;
     margin: 0 auto;
     padding: 0 2rem;
@@ -29,13 +31,15 @@ export const ButtonWrapper = styled.div`
     display: flex;
     gap: 1rem;
 `
-
-export const AuthButton = styled.button`
+interface AuthButtonProps {
+    isLogged: boolean;
+}
+export const AuthButton = styled.button<AuthButtonProps>`
     border: none;
     border-radius: 5px;
     height: 30px;
     padding: 0 1rem;
-    background-color: green;
+    background-color: ${(props) => (props.isLogged ? "red" : "green")};
     color: #ffffff;
     font-size: 0.75rem;
 

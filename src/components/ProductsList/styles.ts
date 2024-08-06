@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-    max-width: 1248px;
+    max-width: 1024px;
     margin: 6rem auto 4rem auto;
     padding: 0 2rem;
 
@@ -9,7 +9,7 @@ export const Container = styled.main`
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
-    gap: 2rem;
+    gap: 1rem;
 
     & > * {
         flex: 1 300px;

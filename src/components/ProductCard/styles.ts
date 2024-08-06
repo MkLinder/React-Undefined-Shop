@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
 export const Card = styled.article`
-    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 100%;
+    max-width: 300px;
     padding: 2rem;
     margin: 0 auto; 
     border-radius: 10px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 1px #0000000f;;
 `
 
 export const ProductImage = styled.img`
@@ -64,6 +67,24 @@ export const AddToCartButton = styled.button`
     width: 100%;
     background-color: navy;
     color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+
+    svg{
+        font-size: 0.75rem;
+    }
+`
+
+export const RemoveFromCartButton = styled.button`
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    background-color: violet;
+    color: #000000;
 
     display: flex;
     align-items: center;
